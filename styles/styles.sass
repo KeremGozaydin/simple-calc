@@ -1,0 +1,64 @@
+$primary-color: blue
+$primary-color-light: #6bbaf7
+$background-color: black
+$button-size: 3rem
+
+
+body
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+    background-color: $background-color
+    font: 1rem monospace
+
+.calc
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    border: 1px solid $primary-color
+    padding: .25rem
+    border-radius: 10%
+    background-color: white
+    box-shadow: 0 0 1rem 0.5rem gray
+
+.row
+    display: flex
+    flex-flow: row nowrap
+
+.box
+    width: $button-size
+    height: $button-size
+    font-size: 1rem
+    border: none
+    border-radius: 10%
+    text-transform: uppercase
+    margin: 0.25rem
+
+.box.primary
+    color: $primary-color
+
+input
+    width: 10rem
+    height: 2rem
+    font-size: 1.5rem
+    text-align: right
+    border: none
+    border-radius: 10%
+    padding: 1rem
+    background-color: white
+    color: $primary-color-light
+
+input:focus
+    outline: none
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+
+/* Firefox *
+input[type=number]
+  -moz-appearance: textfield
